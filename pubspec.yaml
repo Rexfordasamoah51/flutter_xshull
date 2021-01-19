@@ -1,0 +1,51 @@
+name: xscholl
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^6.1.1
+  flutter_modular: ^2.0.1
+  flutter_native_splash: ^0.2.6
+  flutter_staggered_animations: ^0.1.2
+  progress_dialog: ^1.2.4
+  sizer: ^1.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  r_flutter: any
+
+builders:
+  r_flutter: any
+flutter:
+
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+  #   - images/a_dot_ham.jpeg
+  fonts:
+    - family: Nexa
+      fonts:
+        - asset: assets/fonts/Nexa-Bold.ttf
+        - asset: assets/fonts/Nexa-Light.ttf
+          weight: 700
+    - family: Novello
+      fonts:
+        - asset: assets/fonts/Novello_Pro_Bold.ttf
+        - asset: assets/fonts/Novello_Pro_Normal.ttf
+          weight: 700
+    - family: Amatraca
+      fonts:
+        - asset: assets/fonts/amatraca-grotesque-normal.ttf
+          weight: 700
